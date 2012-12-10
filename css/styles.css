@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset */
+
+
+@font-face {
+    font-family: 'franchiseregular';
+    src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot');
+    src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.woff') format('woff'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.ttf') format('truetype'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.svg#franchiseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light-webfont.eot');
+    src: url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Light-webfont.woff') format('woff'),
+         url('Roboto-Light-webfont.ttf') format('truetype'),
+         url('Roboto-Light-webfont.svg#RobotoLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-LightItalic-webfont.eot');
+    src: url('Roboto-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-LightItalic-webfont.woff') format('woff'),
+         url('Roboto-LightItalic-webfont.ttf') format('truetype'),
+         url('Roboto-LightItalic-webfont.svg#RobotoLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+body {
+	position: relative;
+}
+
+#container {
+	max-width: 1240px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	overflow: auto;
+}
+
+#header {
+	position: relative;
+	margin: 0px auto 0px auto;	
+	padding-top: 90px; /* 90 instead of 115 because of 25px height above type */
+	padding-bottom: 115px;
+	/* padding-top: 50px;
+	padding-bottom: 40px; */
+	width: 960px;
+	height: 335px; /* the extra 25px gets added here */
+	background-color: #1F8F9D;
+}
+
+h1 {
+	font-family: 'franchiseregular', sans-serif;
+	color: #ffffff;
+	text-shadow: 4px 4px 0 rgba(0,0,0,0.20);
+	font-size: 180px;
+	line-height: 180px;
+	text-transform:uppercase;
+	text-align: center;
+}
+
+#slider {
+	position: relative;
+	margin: 0px auto 0px auto;
+	width: 960px;
+	height: 240px;
+	background-color: #333333;
+}
+
+#galleryContainer {
+	position: relative;
+	margin: 0px auto 0px auto;
+	width: 960px;
+	height: 780px; /* this eventually needs to change to accommodate more tiles */
+	background-color: #f2f2f2;
+}
+
+#galleryHeader {
+	padding: 30px 45px 30px 45px; /* top is not 30px because of 17px height above type */
+	height: 90px;
+}
+
+#galleryHeader h2 {
+	margin-top: -17px; /* to accommodate 17px height above type */
+	font-family: 'franchiseregular', sans-serif;
+	color: #1F8F9D;
+	font-size: 120px;
+	text-transform:uppercase;
+	text-align: left;
+	float: left;
+}
+
+h3 {
+	padding-top: 2px;
+	padding-left: 45px;
+	float: left;
+	font-family: 'roboto', sans-serif;
+	color: #444444;
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: 200;
+    font-style: italic;
+	
+}
+
+#gallery {
+	position: relative;
+	margin: 0px 15px 30px 15px; /* margin-top = 150px - 60px (because of text?) - 30px (because of tile margin) = 60px */
+}
+
+.tile {
+	width: 390px; /* 420 - 15 - 15 (bug) */
+	height: 150px; /* 180 - 15 - 15 (bug) */
+	background-color: #dddddd;
+	padding: 15px;
+	margin: 0 0 30px 30px;
+	float: left;
+}
+
+#tileTextContainer {
+	float: left;
+	padding-top: 5px;
+}
+
+h4 {
+	font-family: 'roboto', sans-serif;
+	color: #000000;
+	font-size: 24px;
+	line-height: 21px;
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+
+#tileTextContainer p {
+	width: 225px;
+	font-family: 'roboto', sans-serif;
+	color: #000000;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+}
+
+img.tileImg {
+	position: relative;
+	float: right;
+}
+
+#resourcesContainer {
+	position: relative;
+	margin: 0px auto 0px auto;
+	width: 960px;
+	height: 376px;
+	background-color: #555555;
+}
+
+#resourcesHeader {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 90px;
+}
+
+#resourcesHeader h2 {
+	margin-top: -17px;  /* to accommodate 17px height above type */ 
+	font-family: 'franchiseregular', sans-serif;
+	color: #1F8F9D;
+	font-size: 120px;
+	text-transform:uppercase;
+	text-align: center;
+}
+
+#resources1 {
+	
+}
+
+#resources2 {
+
+}
+
+.resources {
+	float: left;
+	width: 330px;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+.resources p {
+	font-family: 'roboto', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+footer {
+	position: relative;
+	margin: 0px auto 0px auto;
+	width: 960px;
+	height: 150px;
+	background-color: #1F8F9D;
+}
+
+footer p {
+	height: 75px;
+	font-family: 'roboto', sans-serif;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 75px;
+	font-weight: 300;
+	text-align: center;
+	/* padding: 30px; */
+}
+
+#footerLinks {
+	width: 360px;
+	height: 45px;
+	margin: 0 auto 0 auto;
+}
+
+a {
+	color: #ffffff;
+	text-decoration:none;
+}
+
+.footer {
+	width: 165px;
+	height: 45px;
+	background-color: #1B808C;
+	font-family: 'roboto', sans-serif;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 45px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.contact {
+	float: left;
+}
+
+.viewPortfolio {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
