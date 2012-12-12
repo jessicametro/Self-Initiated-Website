@@ -89,7 +89,8 @@ body {
 }
 
 #container {
-	max-width: 1240px;
+	/* max-width: 1240px; */
+	min-width: 480px;
 	margin: 0px auto 0px auto;
 	padding: 0px 0px 0px 0px;
 	overflow: auto;
@@ -97,14 +98,20 @@ body {
 
 #header {
 	position: relative;
-	margin: 0px auto 0px auto;	
+	/* margin: 0px auto 0px auto; */
 	padding-top: 90px; /* 90 instead of 115 because of 25px height above type */
 	padding-bottom: 115px;
-	/* padding-top: 50px;
-	padding-bottom: 40px; */
-	width: 960px;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
 	height: 335px; /* the extra 25px gets added here */
 	background-color: #1F8F9D;
+}
+
+#fancyTitleContainer {
+	max-width: 930px;
+	min-width: 420px;
+	margin: 0 auto 0 auto;
 }
 
 h1 {
@@ -112,7 +119,7 @@ h1 {
 	color: #ffffff;
 	text-shadow: 4px 4px 0 rgba(0,0,0,0.20);
 	font-size: 180px;
-	line-height: 180px;
+	line-height: 100%; /* 180px; */
 	text-transform:uppercase;
 	text-align: center;
 }
@@ -120,22 +127,31 @@ h1 {
 #slider {
 	position: relative;
 	margin: 0px auto 0px auto;
-	width: 960px;
-	height: 240px;
+	width: 100%;
+	height: 240px; /* this will be 240px tall at all widths */
 	background-color: #333333;
+}
+
+#galleryContainerContainer {
+	position: relative;
+	margin: 0 auto 0 auto;
+	/* width: 100%; */
+	/* height: 780px; */
+	background-color: #f2f2f2; 
 }
 
 #galleryContainer {
 	position: relative;
 	margin: 0px auto 0px auto;
-	width: 960px;
-	height: 780px; /* this eventually needs to change to accommodate more tiles */
+	max-width: 960px;
+	/* height: 780px; this eventually needs to change to accommodate more tiles */
 	background-color: #f2f2f2;
 }
 
 #galleryHeader {
+	margin: 0 auto 0 auto;
 	padding: 30px 45px 30px 45px; /* top is not 30px because of 17px height above type */
-	height: 90px;
+	/* height: 90px; */
 }
 
 #galleryHeader h2 {
@@ -146,25 +162,39 @@ h1 {
 	text-transform:uppercase;
 	text-align: left;
 	float: left;
+	width: 57%;
 }
 
-h3 {
-	padding-top: 2px;
-	padding-left: 45px;
+#galleryHeader h3 {
+	/* padding-top: 1%;  2px  */
+	padding-left: 4%; /* 45px */
 	float: left;
 	font-family: 'roboto', sans-serif;
 	color: #444444;
 	font-size: 32px;
-	line-height: 42px;
+	line-height: 130%; 
 	font-weight: 200;
     font-style: italic;
-	
+	width: 39%;
 }
 
 #gallery {
 	position: relative;
-	margin: 0px 15px 30px 15px; /* margin-top = 150px - 60px (because of text?) - 30px (because of tile margin) = 60px */
+	margin: 0px auto 30px auto; /* margin-top = 150px - 60px (because of text?) - 30px (because of tile margin) = 60px */
 }
+
+@media screen and (min-width: 0px) {
+	#gallery {
+		width: 480px;
+	}
+}
+
+@media screen and (min-width: 930px) {
+	#gallery {
+		width: 930px;
+	}
+}
+
 
 .tile {
 	width: 390px; /* 420 - 15 - 15 (bug) */
@@ -205,16 +235,20 @@ img.tileImg {
 
 #resourcesContainer {
 	position: relative;
-	margin: 0px auto 0px auto;
-	width: 960px;
-	height: 376px;
+	margin: 0 auto 0 auto;
+	padding-bottom: 15px; /* bottom is 15px (instead of 30px) because each p already has 15px padding-bottom) */
+	width: 100%;
+	/* height: 376px; */
 	background-color: #555555;
 }
 
 #resourcesHeader {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	height: 90px;
+	margin: 0 auto 0 auto;
+	padding-top: 30px; 
+	padding-bottom: 7px; /* 30 - 17 - 6*/
+	/* height: 90px; */
+	max-width: 870px;
+	min-width: 420px;
 }
 
 #resourcesHeader h2 {
@@ -226,19 +260,28 @@ img.tileImg {
 	text-align: center;
 }
 
+#resources {
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+}
+
 #resources1 {
-	
+	float: left;
+	/* margin-right: 15px; */
+	margin: 0 auto 0 auto;
 }
 
 #resources2 {
-
+	float: right;
+	/* margin-left: 15px; */
+	margin: 0 auto 0 auto;
 }
 
 .resources {
-	float: left;
-	width: 330px;
-	margin-left: 45px;
-	margin-right: 45px;
+	/* float: left; */
+	width: 420px;
+	/* margin-left: 45px;
+	margin-right: 45px; */
 }
 
 .resources p {
@@ -247,25 +290,35 @@ img.tileImg {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+em {
+	font-style: italic;
+}
+
+.clear {
+	clear: both;
 }
 
 footer {
 	position: relative;
 	margin: 0px auto 0px auto;
-	width: 960px;
-	height: 150px;
+	padding-bottom: 30px;
+	width: 100%;
+	/* min-height: 150px; */
 	background-color: #1F8F9D;
 }
 
 footer p {
-	height: 75px;
+	/* height: 75px; */
 	font-family: 'roboto', sans-serif;
 	color: #ffffff;
 	font-size: 16px;
-	line-height: 75px;
+	line-height: 22px;
 	font-weight: 300;
 	text-align: center;
-	/* padding: 30px; */
+	padding: 30px;
 }
 
 #footerLinks {
