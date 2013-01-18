@@ -114,8 +114,8 @@ body {
 }
 
 #fancyTitleContainer {
-	padding-top: 16.67%; /* 90 instead of 115 because of 25px height above type */
-	padding-bottom: 21.3%; /* 115px */
+	padding-top: 10%; /* 90 instead of 115 because of 25px height above type, original % = 16.67 */
+	padding-bottom: 10%; /* 115px, original % = 21.3 */
 }
 
 h1 {
@@ -154,12 +154,12 @@ h1 {
 
 #galleryHeader {
 	margin: 0 auto 0 auto;
-	padding: 30px 45px 30px 45px; /* top is not 30px because of 17px height above type */
+	padding: 42px 45px 30px 45px; /* top is not 30px because of 17px height above type (because of ems, it's 42px instead of 47px) */
 	/* height: 90px; */
 }
 
 #galleryHeader h2 {
-	margin-top: -17px; /* to accommodate 17px height above type */
+	margin-top: -0.15em; /* to accommodate 17px height above type */
 	font-family: 'franchiseregular', sans-serif;
 	color: #1F8F9D;
 	font-size: 120px;
