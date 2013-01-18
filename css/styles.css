@@ -236,6 +236,16 @@ h4 {
 	font-weight: 300;
 }
 
+.imageContainer {
+	position: relative;
+}
+
+.ribbon {
+	position: absolute;
+	right: 0px;
+	z-index: 100;
+}
+
 img.tileImg {
 	position: relative;
 	float: right;
