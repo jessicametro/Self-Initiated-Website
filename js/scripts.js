@@ -5,3 +5,9 @@ $(document).ready(function() {
 	$("#galleryHeader h3").fitText(1.1);
 	
 });
+
+$(window).load(function() {
+    $('.flexslider').flexslider({
+    	/* animation: "slide", */
+    });
+});

@@ -136,6 +136,28 @@ h1 {
 	background-color: #333333;
 }
 
+.flexslider {
+	border: none;
+	height: 240px;
+	background-color: inherit;
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.slides {
+	border: none;
+	width: 960px;
+	height: 240px;
+	position: absolute;
+	left: 50%;
+	margin-left: -480px;
+}
+
+.flex-control-nav {
+	bottom: 15px;
+}
+
 #galleryContainerContainer {
 	position: relative;
 	margin: 0 auto 0 auto;
