@@ -275,41 +275,11 @@ img.tileImg {
 }
 
 #resources {
-	max-width: 930px;
+	max-width: 870px; /* 930 - 30 -30 because of the 30px padding */
 	margin: 0 auto 0 auto;
+	padding-right: 30px;
+	padding-left: 30px;
 }
-
-
-@media screen and (min-width: 0px) {
-	#resources {
-		padding-right: 30px;
-		padding-left: 30px;
-	}
-}
-
-@media screen and (min-width: 930px) {
-	#resources1 {
-		float: left;
-		/* margin-right: 15px; */
-		margin: 0 auto 0 auto;
-		padding-left: 30px;
-	}
-	
-	#resources2 {
-		float: right;
-		/* margin-left: 15px; */
-		margin: 0 auto 0 auto;
-		padding-right: 30px;
-	}
-	.resources {
-		/* float: left; */
-		width: 420px; 
-		/* margin-left: 45px;
-		margin-right: 45px; */
-	}
-}
-
-
 
 .resources p {
 	font-family: 'roboto', sans-serif;
