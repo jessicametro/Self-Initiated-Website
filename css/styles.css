@@ -191,16 +191,10 @@ h1 {
 	#gallery {
 		width: 480px;
 	}
-	#resources {
-		width: 480px;
-	}
 }
 
 @media screen and (min-width: 930px) {
 	#gallery {
-		width: 930px;
-	}
-	#resources {
 		width: 930px;
 	}
 }
@@ -281,30 +275,41 @@ img.tileImg {
 }
 
 #resources {
-	max-width: 960px;
+	max-width: 930px;
 	margin: 0 auto 0 auto;
 }
 
-#resources1 {
-	float: left;
-	/* margin-right: 15px; */
-	margin: 0 auto 0 auto;
-	padding-left: 30px;
+
+@media screen and (min-width: 0px) {
+	#resources {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
 }
 
-#resources2 {
-	float: right;
-	/* margin-left: 15px; */
-	margin: 0 auto 0 auto;
-	padding-right: 30px;
+@media screen and (min-width: 930px) {
+	#resources1 {
+		float: left;
+		/* margin-right: 15px; */
+		margin: 0 auto 0 auto;
+		padding-left: 30px;
+	}
+	
+	#resources2 {
+		float: right;
+		/* margin-left: 15px; */
+		margin: 0 auto 0 auto;
+		padding-right: 30px;
+	}
+	.resources {
+		/* float: left; */
+		width: 420px; 
+		/* margin-left: 45px;
+		margin-right: 45px; */
+	}
 }
 
-.resources {
-	/* float: left; */
-	width: 420px;
-	/* margin-left: 45px;
-	margin-right: 45px; */
-}
+
 
 .resources p {
 	font-family: 'roboto', sans-serif;
