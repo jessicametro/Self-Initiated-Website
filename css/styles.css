@@ -104,7 +104,9 @@ body {
 	width: 100%;
 	/* height: 62.03%;  the extra 25px gets added here (335 total)  */
 	/* min-height: 270px;  don't include min-height because it adds extra space at the bottom */
-	background-color: #1F8F9D;	
+	background-color: #1F8F9D;
+	background-image:url('../images/patterns/cream_dust_edited.png');
+	background-repeat:repeat;
 
 	-moz-box-shadow: 0 5px 32px 0 rgba(0,0,0,0.75);
 	-webkit-box-shadow: 0 5px 32px 0 rgba(0, 0, 0, 0.75);
@@ -388,6 +390,8 @@ a {
 	width: 165px;
 	height: 45px;
 	background-color: #1B808C;
+	background-image:url('../images/patterns/cream_dust_edited.png');
+	background-repeat:repeat;
 	font-family: 'roboto', sans-serif;
 	color: #ffffff;
 	font-size: 16px;
@@ -405,6 +409,12 @@ a {
 }
 
 
+::selection {
+	background: #dddddd; /* Safari */
+	}
+::-moz-selection {
+	background: #dddddd; /* Firefox */
+}
 
 
 
