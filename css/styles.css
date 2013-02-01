@@ -51,7 +51,8 @@ table {
 
 
 @font-face {
-    font-family: 'franchiseregular';
+	/* designed by Derek Weathersbee <www.derekweathersbee.com> // found at Lost Type <http://www.losttype.com/font/?name=franchise> */
+    font-family: 'franchiseregular'; 
     src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot');
     src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Franchise-Bold/franchise-bold-webfont.woff') format('woff'),
@@ -59,10 +60,10 @@ table {
          url('../fonts/Franchise-Bold/franchise-bold-webfont.svg#franchiseregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
+	/* designed by Christian Robertson <http://betatype.com/> // found at Google Web Fonts <http://www.google.com/webfonts> */
     font-family: 'Roboto';
     src: url('Roboto-Light-webfont.eot');
     src: url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -74,6 +75,7 @@ table {
 }
  
 @font-face {
+	/* designed by Christian Robertson <http://betatype.com/> // found at Google Web Fonts <http://www.google.com/webfonts> */
     font-family: 'Roboto';
     src: url('Roboto-LightItalic-webfont.eot');
     src: url('Roboto-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
