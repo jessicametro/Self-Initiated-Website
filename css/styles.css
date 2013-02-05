@@ -231,26 +231,6 @@ h1 {
 	margin: 0px auto 0px auto; /* margin-top = 150px - 60px (because of text?) - 30px (because of tile margin) = 60px */
 }
 
-@media screen and (min-width: 0px) {
-	#gallery {
-		width: 320px;
-	}
-}
-
-@media screen and (min-width: 650px) {
-	#gallery {
-		width: 650px;
-	}
-}
-
-
-@media screen and (min-width: 960px) {
-	#gallery {
-		width: 960px;
-	}
-}
-
-
 .tile {
 	width: 250px; /* 280 - 15 - 15 (bug) */
 	height: 250px; /* 180 - 15 - 15 (bug) */
@@ -426,3 +406,29 @@ a {
 	background: #dddddd; /* Firefox */
 }
 
+
+
+@media screen and (min-width: 0px) {
+	#gallery {
+		width: 320px;
+	}
+	.tile {
+		margin: 0 0 30px 20px;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	#gallery {
+		width: 650px;
+	}
+	.tile {
+		margin: 0 0 30px 30px;
+	}
+}
+
+
+@media screen and (min-width: 960px) {
+	#gallery {
+		width: 960px;
+	}
+}
