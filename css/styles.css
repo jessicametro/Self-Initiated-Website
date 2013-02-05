@@ -187,14 +187,11 @@ h1 {
 #galleryContainerContainer {
 	position: relative;
 	margin: 0 auto 0 auto;
-	/* width: 100%; */
-	/* height: 780px; */
+	padding-bottom: 30px;
 	background-color: #dddddd; 
-	
 	-moz-box-shadow: 0 0px 37px 0 rgba(0,0,0,0.75);
 	-webkit-box-shadow: 0 0px 37px 0 rgba(0, 0, 0, 0.75);
 	box-shadow: 0 0px 37px 0 rgba(0,0,0,0.75);
-	
 	z-index: 1;
 }
 
@@ -202,14 +199,12 @@ h1 {
 	position: relative;
 	margin: 0px auto 0px auto;
 	max-width: 960px;
-	/* height: 780px; this eventually needs to change to accommodate more tiles */
 	background-color: #dddddd;
 }
 
 #galleryHeader {
 	margin: 0 auto 0 auto;
 	padding: 42px 45px 30px 45px; /* top is not 30px because of 17px height above type (because of ems, it's 42px instead of 47px) */
-	/* height: 90px; */
 }
 
 #galleryHeader h2 {
@@ -224,7 +219,6 @@ h1 {
 }
 
 #galleryHeader h3 {
-	/* padding-top: 1%;  2px  */
 	padding-left: 4%; /* 45px */
 	float: left;
 	font-family: 'roboto', sans-serif;
@@ -327,9 +321,8 @@ img.tileImg {
 #resourcesContainer {
 	position: relative;
 	margin: 0 auto 0 auto;
-	padding-bottom: 15px; /* bottom is 15px (instead of 30px) because each p already has 15px padding-bottom) */
+	padding: 30px 0px;
 	width: 100%;
-	/* height: 376px; */
 	background-color: #555555;
 }
 
