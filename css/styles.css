@@ -255,7 +255,7 @@ h1 {
 
 h4 {
 	font-family: 'roboto', sans-serif;
-	color: #000000;
+	color: #222222;
 	font-size: 24px;
 	line-height: 20px;
 	font-weight: 900;
@@ -267,7 +267,7 @@ h4 {
 	width: 250px;
 	height: 40px;  /* realistically 45px */
 	font-family: 'roboto', sans-serif;
-	color: #000000;
+	color: #222222;
 	font-size: 15px;
 	line-height: 20px;
 	font-weight: 300;
