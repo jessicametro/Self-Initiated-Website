@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset */
+
+
+
+
+/* begin c+p */
+
+@font-face {
+	/* designed by Derek Weathersbee <www.derekweathersbee.com> // found at Lost Type <http://www.losttype.com/font/?name=franchise> */
+    font-family: 'franchiseregular'; 
+    src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot');
+    src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.woff') format('woff'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.ttf') format('truetype'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.svg#franchiseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	/* designed by Christian Robertson <http://betatype.com/> // found at Google Web Fonts <http://www.google.com/webfonts> */
+    font-family: 'Roboto';
+    src: url('Roboto-Light-webfont.eot');
+    src: url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Light-webfont.woff') format('woff'),
+         url('Roboto-Light-webfont.ttf') format('truetype'),
+         url('Roboto-Light-webfont.svg#RobotoLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+ 
+@font-face {
+	/* designed by Christian Robertson <http://betatype.com/> // found at Google Web Fonts <http://www.google.com/webfonts> */
+    font-family: 'Roboto';
+    src: url('Roboto-LightItalic-webfont.eot');
+    src: url('Roboto-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-LightItalic-webfont.woff') format('woff'),
+         url('Roboto-LightItalic-webfont.ttf') format('truetype'),
+         url('Roboto-LightItalic-webfont.svg#RobotoLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+body {
+	position: relative;
+}
+
+#container {
+	min-width: 480px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	overflow: auto;
+}
+
+
+
+h4 {
+	font-family: 'roboto', sans-serif;
+	color: #000000;
+	font-size: 24px;
+	line-height: 21px;
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+
+p {
+	font-family: 'roboto', sans-serif;
+	color: #000000;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+
+/* end c+p */
+
+
+
+body {
+	margin: 0px auto 0px auto;
+	max-width: 960px;
+	background-color: #f2f2f2;
+}
+
+h5 {
+	font-family: 'roboto', sans-serif;
+	font-family: 'roboto', sans-serif;
+	color: #000000;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+a {
+	color: #1F8F9D;
+	text-decoration:none;
+}
+
+.descriptionAndCode{
+	max-width: 660px;
+	position: relative;
+
+}
+
+.code {
+	font-family: 'Nixie One', cursive;	
+}
+
+pre {
+	background-color: #444444;
+	padding: 15px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	font-family: 'Nixie One', cursive;
+	font-size: 0.8em;
+	line-height: 1.6em;
+	color: #eeeeee;
+	margin-bottom: 1.5em;
+	overflow: scroll;
+}
+
+
+
+
+
+

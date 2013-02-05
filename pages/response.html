@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Response</title>
+		<meta charset="utf-8" /> 
+		<meta name="viewport" content="width=device-width" />
+		<!-- additional stylesheets go here -->
+		<link rel="stylesheet" href="../css/pages.css" type="text/css"/>
+		
+	</head>
+	<body>
+		<div id="container">
+			
+			<!--
+			<div id="header">
+				<div id="navigation">
+				</div>
+			</div>
+			-->
+			
+			<div id="body">
+				
+				<h4>Response</h4>
+				<h5>created by <a href="http://jessicametro.com">Jessica Metro</a></h5>
+			
+				<div class="descriptionAndCode">
+			
+					<p class="description">
+						Responsive Tiles is a CSS3 code sample I wrote to build responsive galleries based on CSS3 media queries. It functions by changing the number of columns displayed based on the user’s browser width or screen size.
+					<p>
+					
+					<p class="description">
+						So, a user would see:
+					</p>
+				
+					<ul>
+						<li>
+							five columns when browsing full-screen on a desktop computer or laptop
+						<li>
+						</li>
+							four columns when browsing a little less than full-screen on a desktop computer or laptop
+						<li>
+						</li>
+							three columns when browsing (horizontally) on an iPad or other 10” tablet
+						<li>
+						</li>
+							two columns when browsing on a vertical 7” tablet, such as the Galaxy Nexus or iPad mini
+						<li>
+						</li>
+							one column when browsing on a vertical smartphone
+						</li>
+					</ul>
+				
+					<p class="description">
+						All of these numbers are of course customizable, especially depending on the size of tiles (and width of columns) desired. 
+					</p>
+					
+					<p class="description">
+						In this code sample, I’ve used various sized tiles (1:1 and 2:1). On a smartphone, the 2:1 tiles would be too wide to be displayed fully and would look awkward. So, I included the ability for them to rotate to become 1:2, creating a smooth single column.
+					</p>
+					
+					<p class="description">
+						In order to create responsive tiles, you must first call the viewport in your HTML: 
+					</p>
+					
+					<pre>
+&lt;meta name="viewport" content="width=device-width"/&gt;</pre>
+					
+					<p class="description">
+						This <span class="code">&lt;meta/&gt;</span> tag goes in your <span class="code">&lt;head&gt;</span> tag, after the <span class="code">&lt;meta charset=“utf-8”/&gt;</span> tag and before the link to your stylesheet. This allows your website to detect what screen size and browser size a user is viewing your site at.
+					</p>
+					
+					<p class="description">
+						It’s good practice to wrap your entire site in a <span class="code">div</span> with <span class="code">id=“container”</span>. That way, in your stylesheet, you can assign a <span class="code">max-width</span> to the <span class="code">#container</span>, enabling you to have left and right margins at the largest browser size rather than an endless view of columns — unless of course that is your goal. But, in my demo, I’ve used: 
+					</p>
+					
+					<pre>
+body {
+	position: relative;
+}
+
+#container {
+	max-width: 1240px;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 85px 15px; 		/* the extra 15px padding-left compensates for the padding in between each tile, as you’ll see later */
+	overflow: auto;
+}</pre>
+					
+					<p class="description">
+						In your HTML, you will also want to create a <span class="code">div</span> for each tile and assign it <span class="code">class=“tile”</span>; each <span class="code">div</span> will contain an image (or two if you choose to implement a hover state with JavaScript, or different rotations) and any text you want (as I have done in this site). In my CSS, I have styled each tile as such:
+					</p>
+					
+					<pre>
+.tile {
+	position: relative;
+	float: left;
+	background-color: #fff;
+	
+	padding: 15px;		
+	margin-right: 15px;	  		
+	margin-bottom: 15px;		/* all of my calculations for my min-widths are based on the tile’s padding and margins */  
+  	
+	border-radius: 2px; 		/* another fun addition with CSS3 */
+	box-shadow: 0 0 1px rgba(0, 0, 0, .25); 		/* another fun addition with CSS3 */
+}</pre>
+					
+					<p class="description">
+						Finally, in your CSS, you will want to use the new CSS3 Media Queries: 
+					</p>
+					
+					<pre>
+@media screen and (min-width: 230px) {   	/* anything less than 489px */
+	#container {
+		width: 245px;		     				/* 1 column will be displayed */
+	}
+}
+@media screen and (min-width: 675px) {    	/* between 675px and 734px */
+	#container {
+		width: 490px;		     				/* 2 columns will be displayed */
+	}
+}
+@media screen and (min-width: 920px) {   	/* between 920px and 979px */
+	#container {
+		width: 735px;		     				/* 3 columns will be displayed */
+	}
+}
+@media screen and (min-width: 1165px) {  	/* between 1165px and 1239px */
+	#container {
+		width: 980px;		     				/* 4 columns will be displayed */
+	}
+}
+@media screen and (min-width: 1440px) {  	/* between 1440px and infinity */
+		#container {
+			width: 1240px;		     			/* 5 columns will be displayed */
+		}
+}</pre>
+					
+					<p class="description">
+						If this is all you want to do — if all of your tiles were the same aspect ratio, etc — then you are done! But, if you do want to use different aspect ratios (e.g. to make certain tiles stand out, etc) then you will need to give each tile additional classes (to distinguish each ratio you’re using — e.g. <span class="code">“feat”</span>) as well as those additional images I mentioned earlier (also distinguished with classes — e.g. <span class="code">“horizontal”</span> and <span class="code">“vertical”</span>). In your CSS, you will want to add the following to <span class="code">@media screen and (min-width: 230px)</span> (one column):
+					</p>
+					
+					<pre>
+/* Note: I wrapped all of my tiles in another div id=”projects” to be more descriptive. You can, too, or not. */
+
+#projects .feat .horizontal {
+	display: none;
+}
+#projects .feat {
+	width: 200px;
+	height: 445px;
+}</pre>
+					
+					<p class="description">
+						You will also want to add the following to <span class="code">@media screen and (min-width: 675px)</span> (two columns):
+					</p>
+					
+					<pre>
+#projects .feat .vertical {
+	display: none;
+}
+#projects .feat .horizontal {
+	display: block;
+}
+#projects .feat {
+	width: 445px;
+	height: 200px;
+}</pre>
+					
+					<p class="description">
+						And that’s it for media queries!
+					</p>
+				</div>	<!-- descriptionAndCode -->
+				
+								
+			</div>	<!-- body -->
+			
+			
+			<div id="footer">
+			</div>
+			
+		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<!-- additional js links go here -->
+		<script src="js/scripts.js"></script>
+			
+	</body>			
+</html> 
