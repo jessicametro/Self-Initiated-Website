@@ -293,12 +293,16 @@ h4 {
 }
 
 #gallery p {
-	width: 225px;
+	width: 250px;
+	height: 40px;  /* realistically 45px */
 	font-family: 'roboto', sans-serif;
 	color: #000000;
 	font-size: 15px;
 	line-height: 20px;
 	font-weight: 300;
+ /* text-overflow: ellipsis;
+	white-space: nowrap; */             
+  	overflow: hidden; 
 }
 
 .imageContainer {
