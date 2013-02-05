@@ -243,20 +243,27 @@ h1 {
 
 @media screen and (min-width: 0px) {
 	#gallery {
-		width: 480px;
+		width: 320px;
 	}
 }
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 650px) {
 	#gallery {
-		width: 930px;
+		width: 650px;
+	}
+}
+
+
+@media screen and (min-width: 960px) {
+	#gallery {
+		width: 960px;
 	}
 }
 
 
 .tile {
-	width: 390px; /* 420 - 15 - 15 (bug) */
-	height: 150px; /* 180 - 15 - 15 (bug) */
+	width: 250px; /* 280 - 15 - 15 (bug) */
+	height: 250px; /* 180 - 15 - 15 (bug) */
 	background-color: #dddddd;
 	padding: 15px;
 	margin: 0 0 30px 30px;
@@ -268,10 +275,12 @@ h1 {
 	
 }
 
+/*
 #tileTextContainer {
 	float: left;
 	padding-top: 5px;
 }
+*/
 
 h4 {
 	font-family: 'roboto', sans-serif;
