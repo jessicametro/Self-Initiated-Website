@@ -51,8 +51,7 @@ table {
 
 
 @font-face {
-	/* designed by Derek Weathersbee <www.derekweathersbee.com> // found at Lost Type <http://www.losttype.com/font/?name=franchise> */
-    font-family: 'franchiseregular'; 
+    font-family: 'franchiseregular';
     src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot');
     src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Franchise-Bold/franchise-bold-webfont.woff') format('woff'),
@@ -60,10 +59,10 @@ table {
          url('../fonts/Franchise-Bold/franchise-bold-webfont.svg#franchiseregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
-	/* designed by Christian Robertson <http://betatype.com/> // found at Google Web Fonts <http://www.google.com/webfonts> */
     font-family: 'Roboto';
     src: url('Roboto-Light-webfont.eot');
     src: url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -75,7 +74,6 @@ table {
 }
  
 @font-face {
-	/* designed by Christian Robertson <http://betatype.com/> // found at Google Web Fonts <http://www.google.com/webfonts> */
     font-family: 'Roboto';
     src: url('Roboto-LightItalic-webfont.eot');
     src: url('Roboto-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -92,7 +90,7 @@ body {
 
 #container {
 	/* max-width: 1240px; */
-	min-width: 480px;
+	min-width: 320px;
 	margin: 0px auto 0px auto;
 	padding: 0px 0px 0px 0px;
 	overflow: auto;
@@ -101,31 +99,21 @@ body {
 #header {
 	position: relative;
 	/* margin: 0px auto 0px auto; */
+	padding-top: 16.67%; /* 90 instead of 115 because of 25px height above type */
+	padding-bottom: 21.3%; /* 115px */
 	padding-left: auto;
 	padding-right: auto;
 	width: 100%;
 	/* height: 62.03%;  the extra 25px gets added here (335 total)  */
-	/* min-height: 270px;  don't include min-height because it adds extra space at the bottom */
+	max-height: 335px;
+	min-height: 180px;
 	background-color: #1F8F9D;
-	background-image:url('../images/patterns/cream_dust_edited.png');
-	background-repeat:repeat;
-
-	-moz-box-shadow: 0 5px 32px 0 rgba(0,0,0,0.75);
-	-webkit-box-shadow: 0 5px 32px 0 rgba(0, 0, 0, 0.75);
-	box-shadow: 0 5px 32px 0 rgba(0,0,0,0.75);
-	z-index: 1;
-
-}
-
-#fancyTitleWrapper {
-	max-width: 900px;
-	min-width: 420px;
-	margin: 0 auto 0 auto;
 }
 
 #fancyTitleContainer {
-	padding-top: 10%; /* 90 instead of 115 because of 25px height above type, original % = 16.67 */
-	padding-bottom: 10%; /* 115px, original % = 21.3 */
+	max-width: 930px;
+	min-width: 280px;
+	margin: 0 auto 0 auto;
 }
 
 h1 {
@@ -134,7 +122,7 @@ h1 {
 	text-shadow: 4px 4px 0 rgba(0,0,0,0.20);
 	font-size: 180px;
 	line-height: 100%; /* 180px; */
-	/* text-transform:uppercase; */
+	text-transform:uppercase;
 	text-align: center;
 }
 
@@ -142,47 +130,9 @@ h1 {
 	position: relative;
 	margin: 0px auto 0px auto;
 	width: 100%;
-	height: 240px; /* this will be 240px tall at all widths */
+	height: 160px; /* this will be 240px tall at all widths */
 	background-color: #333333;
-	z-index: 0;
 }
-
-.flexslider {
-	border: none;
-	height: 240px;
-	background-color: inherit;
-	max-width: 960px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-.slides {
-	border: none;
-	width: 960px;
-	height: 240px;
-	position: absolute;
-	left: 50%;
-	margin-left: -480px;
-}
-
-.flex-control-nav {
-	bottom: 15px;
-	z-index: 100;
-}
-
-
-/*
-.gradient {
-	background-image:url('../images/shadows_leftright.png');
-	background-repeat:repeat-y;
-	z-index: 0;
-	height: 240px;
-	width: 962px;
-	position: absolute;
-	top: 0;
-	left: 0;	
-}
-*/
 
 #galleryContainerContainer {
 	position: relative;
@@ -190,12 +140,6 @@ h1 {
 	/* width: 100%; */
 	/* height: 780px; */
 	background-color: #f2f2f2; 
-	
-	-moz-box-shadow: 0 0px 37px 0 rgba(0,0,0,0.75);
-	-webkit-box-shadow: 0 0px 37px 0 rgba(0, 0, 0, 0.75);
-	box-shadow: 0 0px 37px 0 rgba(0,0,0,0.75);
-	
-	z-index: 1;
 }
 
 #galleryContainer {
@@ -208,12 +152,12 @@ h1 {
 
 #galleryHeader {
 	margin: 0 auto 0 auto;
-	padding: 42px 45px 30px 45px; /* top is not 30px because of 17px height above type (because of ems, it's 42px instead of 47px) */
+	padding: 20px 40px 20px 40px; /* top is not 30px because of 17px height above type */
 	/* height: 90px; */
 }
 
 #galleryHeader h2 {
-	margin-top: -0.15em; /* to accommodate 17px height above type */
+	margin-top: -17px; /* to accommodate 17px height above type */
 	font-family: 'franchiseregular', sans-serif;
 	color: #1F8F9D;
 	font-size: 120px;
@@ -243,7 +187,10 @@ h1 {
 
 @media screen and (min-width: 0px) {
 	#gallery {
-		width: 480px;
+		width: 320px;
+	}
+	#resources {
+		width: 320px;
 	}
 }
 
@@ -251,21 +198,19 @@ h1 {
 	#gallery {
 		width: 930px;
 	}
+	#resources {
+		width: 930px;
+	}
 }
 
 
 .tile {
-	width: 390px; /* 420 - 15 - 15 (bug) */
-	height: 150px; /* 180 - 15 - 15 (bug) */
+	width: 260px; /* 280 - 10 - 10 (bug) */
+	height: 100px; /* 120 - 10 - 10 (bug) */
 	background-color: #dddddd;
-	padding: 15px;
-	margin: 0 0 30px 30px;
+	padding: 10px;
+	margin: 0 0 20px 20px;
 	float: left;
-	
-	-moz-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.25);
-	-webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
-	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.25);
-	
 }
 
 #tileTextContainer {
@@ -276,19 +221,23 @@ h1 {
 h4 {
 	font-family: 'roboto', sans-serif;
 	color: #000000;
-	font-size: 24px;
-	line-height: 21px;
+	font-size: 22px;
+	line-height: 20px;
 	font-weight: 900;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 #tileTextContainer p {
-	width: 225px;
+	width: 150px;
+	height: 63px;
 	font-family: 'roboto', sans-serif;
 	color: #000000;
-	font-size: 16px;
-	line-height: 22px;
+	font-size: 15px;
+	line-height: 20px;
 	font-weight: 300;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
 }
 
 .imageContainer {
@@ -309,44 +258,60 @@ img.tileImg {
 #resourcesContainer {
 	position: relative;
 	margin: 0 auto 0 auto;
-	padding-bottom: 15px; /* bottom is 15px (instead of 30px) because each p already has 15px padding-bottom) */
+	padding-bottom: 20px; 
 	width: 100%;
-	/* height: 376px; */
 	background-color: #555555;
 }
 
 #resourcesHeader {
 	margin: 0 auto 0 auto;
-	padding-top: 30px; 
-	padding-bottom: 7px; /* 30 - 17 - 6*/
+	padding-top: 20px; 
+	padding-bottom: 7px; /* 30 - 17 - 6    ??????? */
 	/* height: 90px; */
-	max-width: 870px;
-	min-width: 420px;
+	max-width: 870px;  /* still need to change */
+	min-width: 320px;
 }
 
 #resourcesHeader h2 {
 	margin-top: -17px;  /* to accommodate 17px height above type */ 
 	font-family: 'franchiseregular', sans-serif;
 	color: #1F8F9D;
-	font-size: 120px;
+	font-size: 120px;  /* uhhh */
 	text-transform:uppercase;
 	text-align: center;
 }
 
 #resources {
-	max-width: 870px; /* 930 - 30 -30 because of the 30px padding */
+	max-width: 960px;
 	margin: 0 auto 0 auto;
-	padding-right: 30px;
-	padding-left: 30px;
+}
+
+#resources1 {
+	float: left;
+	margin: 0 auto 0 auto;
+	padding-left: 20px;
+}
+
+#resources2 {
+	float: right;
+	margin: 0 auto 0 auto;
+	padding-right: 20px;
+}
+
+.resources {
+	/* float: left; */
+	width: 320px;
+	/* margin-left: 45px;
+	margin-right: 45px; */
 }
 
 .resources p {
 	font-family: 'roboto', sans-serif;
 	color: #ffffff;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 15px;
+	line-height: 20px;
 	font-weight: 300;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 em {
@@ -360,28 +325,24 @@ em {
 footer {
 	position: relative;
 	margin: 0px auto 0px auto;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	width: 100%;
-	/* min-height: 150px; */
 	background-color: #1F8F9D;
-	background-image:url('../images/patterns/cream_dust_edited.png');
-	background-repeat:repeat;
 }
 
 footer p {
-	/* height: 75px; */
 	font-family: 'roboto', sans-serif;
 	color: #ffffff;
-	font-size: 16px;
-	line-height: 22px;
+	font-size: 15px;
+	line-height: 20px;
 	font-weight: 300;
 	text-align: center;
-	padding: 30px;
+	padding: 20px;
 }
 
 #footerLinks {
-	width: 360px;
-	height: 45px;
+	width: 320px;
+	height: 30px;
 	margin: 0 auto 0 auto;
 }
 
@@ -391,14 +352,13 @@ a {
 }
 
 .footer {
-	width: 165px;
-	height: 45px;
-	/* background-color: #1B808C; */
-	background-color: rgba(0, 0, 0, .08);
+	width: 110px;
+	height: 30px;
+	background-color: #1B808C;
 	font-family: 'roboto', sans-serif;
 	color: #ffffff;
-	font-size: 16px;
-	line-height: 45px;
+	font-size: 15px;
+	line-height: 30px;
 	font-weight: 300;
 	text-align: center;
 }
@@ -412,10 +372,10 @@ a {
 }
 
 
-::selection {
-	background: #dddddd; /* Safari */
-	}
-::-moz-selection {
-	background: #dddddd; /* Firefox */
-}
+
+
+
+
+
+
 
