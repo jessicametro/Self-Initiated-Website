@@ -91,8 +91,7 @@ body {
 }
 
 #container {
-	/* max-width: 1240px; */
-	min-width: 480px;
+	min-width: 320px;
 	margin: 0px auto 0px auto;
 	padding: 0px 0px 0px 0px;
 	overflow: auto;
@@ -100,7 +99,6 @@ body {
 
 #header {
 	position: relative;
-	/* margin: 0px auto 0px auto; */
 	padding-left: auto;
 	padding-right: auto;
 	width: 100%;
@@ -109,17 +107,15 @@ body {
 	background-color: #1F8F9D;
 	background-image:url('../images/patterns/cream_dust_edited.png');
 	background-repeat:repeat;
-
 	-moz-box-shadow: 0 5px 32px 0 rgba(0,0,0,0.75);
 	-webkit-box-shadow: 0 5px 32px 0 rgba(0, 0, 0, 0.75);
 	box-shadow: 0 5px 32px 0 rgba(0,0,0,0.75);
 	z-index: 1;
-
 }
 
 #fancyTitleWrapper {
 	max-width: 900px;
-	min-width: 420px;
+	min-width: 320px;
 	margin: 0 auto 0 auto;
 }
 
