@@ -228,7 +228,7 @@ h1 {
 	padding-left: 4%; /* 45px */
 	float: left;
 	font-family: 'roboto', sans-serif;
-	color: #444444;
+	color: rgba(0, 0, 0, 0.4);  /* originally #444444 */
 	font-size: 32px;
 	line-height: 130%; 
 	font-weight: 200;
