@@ -199,31 +199,35 @@ h1 {
 }
 
 #galleryHeader {
-	margin: 0 auto 0 auto;
-	padding: 42px 45px 30px 45px; /* top is not 30px because of 17px height above type (because of ems, it's 42px instead of 47px) */
+	min-height: 45px;
+	margin: auto auto auto auto;
+	padding: 30px 30px 30px 30px; /* top is not 30px because of 17px height above type (because of ems, it's 42px instead of 47px) */
+	/* padding: 30px 5% 30px 5%; /* top is not 30px because of 17px height above type (because of ems, it's 42px instead of 47px) */
+
 }
 
 #galleryHeader h2 {
-	margin-top: -0.15em; /* to accommodate 17px height above type */
+	/* margin-top: -0.15em; /* to accommodate 17px height above type */
 	font-family: 'franchiseregular', sans-serif;
 	color: #1F8F9D;
 	font-size: 120px;
 	text-transform:uppercase;
 	text-align: left;
 	float: left;
-	width: 57%;
+	width: 62%;
 }
 
 #galleryHeader h3 {
-	padding-left: 4%; /* 45px */
 	float: left;
 	font-family: 'roboto', sans-serif;
 	color: rgba(0, 0, 0, 0.4);  /* originally #444444 */
 	font-size: 32px;
-	line-height: 130%; 
+	line-height: 115%; 
 	font-weight: 200;
     font-style: italic;
-	width: 39%;
+    text-align: right;
+    margin-top: 2.0%;
+	width: 38%;
 }
 
 #gallery {
@@ -415,6 +419,9 @@ a {
 	.tile {
 		margin: 0 0 30px 20px;
 	}
+	#galleryHeader {
+		padding: 30px 15px 30px 15px; /* top is not 30px because of 17px height above type (because of ems, it's 42px instead of 47px) */
+	}
 	#slider, .flexslider, .slides {
 		height: 160px;
 	}
@@ -427,6 +434,10 @@ a {
 	.tile {
 		margin: 0 0 30px 30px;
 	}
+	#galleryHeader {
+		padding: 30px 30px 30px 30px; /* top is not 30px because of 17px height above type (because of ems, it's 42px instead of 47px) */
+	}
+
 	#slider, .flexslider, .slides {
 		height: 240px;
 	}
