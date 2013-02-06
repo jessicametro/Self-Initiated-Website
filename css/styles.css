@@ -482,7 +482,7 @@ h5 {
 	padding-bottom: 20px;
 }
 
-li {
+.descriptionAndCode li {
 	font-family: 'roboto', sans-serif;
 	color: #222222;
 	font-size: 15px;
@@ -491,8 +491,9 @@ li {
 	padding-left: 8px;
 }
 
-ul {
+.descriptionAndCode ul {
 	list-style: circle;
+	margin-top: -20px;
 	margin-left: 0;
 	padding-left: 24px;
 	padding-bottom: 20px;
@@ -500,7 +501,7 @@ ul {
 }
 
 
-ul li:before {
+.descriptionAndCode ul li:before {
 	content: "\0020 \0020";
 }
 
