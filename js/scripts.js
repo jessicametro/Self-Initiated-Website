@@ -9,8 +9,14 @@ $(document).ready(function() {
 	$("#galleryHeader").click(function() {
 		goToGallery();
 	});
-	$("#flexslider").click(function() {
-		goToPage("#page2");
+	$("#tileResponse").click(function() {
+		goToPage("#response");
+	});
+	$("#tileSpinner").click(function() {
+		goToPage("#spinner");
+	});
+	$("#tileCaptcha").click(function() {
+		goToPage("#motionCaptcha");
 	});
 });
 

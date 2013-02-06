@@ -557,6 +557,9 @@ pre {
 	#slider, .flexslider, .slides {
 		height: 160px;
 	}
+	.slides {
+		margin-top: -40px;
+	}
 }
 
 @media screen and (min-width: 400px) {
@@ -590,6 +593,9 @@ pre {
 
 	#slider, .flexslider, .slides {
 		height: 240px;
+	}
+	.slides {
+		margin-top: 0px;
 	}
 }
 

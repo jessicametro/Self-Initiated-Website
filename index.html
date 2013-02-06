@@ -55,7 +55,7 @@
 					
 					
 						<div id="gallery" class="page">
-							<div id="lettering" class="tile used">
+							<div id="tileFitText" class="tile used">
 								<h4>FitText</h4>
 								<div class="imageContainer">
 									<div class="ribbon"> <img src="images/ribbon.png" alt="ribbon" width="45" height="45" /> </div>
@@ -64,7 +64,7 @@
 								<p>FitText is a jQuery plugin that enables text to scale proportionally with the width of the browser.</p>
 							</div>
 							
-							<div id="flexslider" class="tile used">
+							<div id="tileFlexslider" class="tile used">
 								<h4>FlexSlider</h4>
 								<div class="imageContainer">
 									<div class="ribbon"> <img src="images/ribbon.png" alt="ribbon" width="45" height="45" /> </div>
@@ -73,8 +73,8 @@
 								<p>FlexSlider is a jQuery plugin for a responsive image slider that responds to touch.</p>
 							</div>
 						
-							<div id="response" class="tile used">
-								<h4>Responsive Tiles</h4>
+							<div id="tileResponse" class="tile used">
+								<h4>Response</h4>
 								<div class="imageContainer">
 									<div class="ribbon"> <img src="images/ribbon.png" alt="ribbon" width="45" height="45" /> </div>
 									<img class="tileImg" src="images/tiles/responsive_tiles.png" alt="preview of the responsive tiles" width="250" height="150"/>
@@ -82,7 +82,7 @@
 								<p>Responsive Tiles is my own CSS3 media query demo to build a responsive gallery.</i></p>
 							</div>
 						
-							<div id="animations" class="tile used">
+							<div id="tileAnimations" class="tile used">
 								<h4>CSS3 Animations</h4>
 								<div class="imageContainer">
 									<div class="ribbon"> <img src="images/ribbon.png" alt="ribbon" width="45" height="45" /> </div>
@@ -91,7 +91,7 @@
 								<p>Webkit has some experimental features for the web including transitions between pages.</p>
 							</div>
 							
-							<div id="spinner" class="tile used">
+							<div id="tileSpinner" class="tile used">
 								<h4>Spinner.js</h4>
 								<div class="imageContainer">
 									<div class="ribbon"> <img src="images/ribbon.png" alt="ribbon" width="45" height="45" /> </div>
@@ -100,15 +100,15 @@
 								<p>Spinner.js is a jQuery plugin that creates a custom spinner (for when something is loading) without the use of gifs.</p>
 							</div>
 							
-							<div id="captcha" class="tile">
+							<div id="tileCaptcha" class="tile">
 								<h4>MotionCaptcha</h4>
 								<div class="imageContainer">
-									<img class="tileImg" src="images/tiles/blank.png" alt="preview of the motion captcha" width="250" height="150"/>
+									<img class="tileImg" src="images/tiles/captcha.jpg" alt="preview of the motion captcha" width="250" height="150"/>
 								</div>
 								<p>MotionCaptcha is a jQuery plugin that allows your users to complete captchas with a gesture, rather than typing on a tiny screen.</p>
 							</div>
 							
-							<div id="patterns" class="tile">
+							<div id="tilePatterns" class="tile">
 								<h4>Subtle Patterns</h4>
 								<div class="imageContainer">
 									<img class="tileImg" src="images/tiles/blank.png" alt="preview of the motion captcha" width="250" height="150"/>
@@ -116,7 +116,7 @@
 								<p>Subtle Patterns is an online collection of beautifully designed patterns — all free to use. </p>
 							</div>
 							
-							<div id="webFonts" class="tile">
+							<div id="tileWebFonts" class="tile">
 								<h4>Web Fonts</h4>
 								<div class="imageContainer">
 									<img class="tileImg" src="images/tiles/blank.png" alt="preview of the motion captcha" width="250" height="150"/>
@@ -129,11 +129,11 @@
 						</div>
 						
 						
-						<div id="page2" class="page inner">
+						<div id="response" class="page inner">
 							<h4>Response</h4>
 							<h5>created by <a href="http://jessicametro.com">Jessica Metro</a></h5>
 							
-							<img class="innerImg" src="images/tiles/responsive_tiles.png" alt="preview of the responsive tiles" width="300" height="300"/>
+							<img class="innerImg" src="images/pages/response.png" alt="preview of the responsive tiles" width="300" height="300"/>
 							
 							<div class="descriptionAndCode">
 						
@@ -283,6 +283,71 @@ body {
 								</p>
 							</div>	<!-- descriptionAndCode -->
 						</div>
+						
+						<div id="spinner" class="page inner">
+							<h4>Spin.js</h4>
+							<h5>created by <a href="https://github.com/fgnass">Felix Gnass</a></h5>
+							
+							<img class="innerImg" src="images/pages/spinner.jpg" alt="preview of spin.js" width="300" height="300"/>
+							
+							<div class="descriptionAndCode">
+						
+								<p class="description">
+									Spin.js is a jQuery plugin that creates a custom spinner (for when something is loading) without the use of GIF images. It does not depend on CSS or jQuery, is resolution independent, and is supported by all major browsers. You can customize the exact spinner you want for your website by going to the <a href="http://fgnass.github.com/spin.js">spin.js plugin homepage</a> and changing the number of lines, the length of each line, the width of each line, the radius of the negative space, the roundness of the corners, the rotation of the spinner, the trail opacity, the speed of the spinner animation, the dropshadow, and the acceleration (as it progresses).
+								</p>
+								
+								<p class="description">
+									This plugin could not be simpler to use. After you customize the spinner you want to embed, it will generate all of the code for you. Simply download the spin.js package, include it in your js folder, link to spin.js in your index.html file, create an element (<span class="code">div</span>) with <span class="code">class= “spinner”</span>, and copy + paste the generated code into your own scripts.js file. 
+								</p>
+								
+								<pre>
+$(document).ready(function() {
+	var opts = {
+	  lines: 9, // The number of lines to draw
+	  length: 0, // The length of each line
+	  width: 20, // The line thickness
+	  radius: 0, // The radius of the inner circle
+	  corners: 1, // Corner roundness (0..1)
+	  rotate: 0, // The rotation offset
+	  color: '#fff', // #rgb or #rrggbb
+	  speed: 1.3, // Rounds per second
+	  trail: 60, // Afterglow percentage
+	  shadow: false, // Whether to render a shadow
+	  hwaccel: false, // Whether to use hardware acceleration
+	  className: 'spinner', // The CSS class to assign to the spinner
+	  zIndex: 2e9, // The z-index (defaults to 2000000000)
+	  top: 'auto', // Top position relative to parent in px
+	  left: 'auto' // Left position relative to parent in px
+	};
+	var target = document.getElementById('spinner');
+	var spinner = new Spinner(opts).spin(target);
+});</pre>		
+							</div>
+						</div>
+						
+						<div id="motionCaptcha" class="page inner">
+							<h4>MotionCaptcha</h4>
+							<h5>created by <a href="http://www.josscrowcroft.com/">Joss Crowcroft</a></h5>
+							
+							<img class="innerImg" src="images/pages/captcha.jpg" alt="preview of motion captcha" width="300" height="300"/>
+							
+							<div class="descriptionAndCode">
+						
+								<p class="description">
+									MotionCaptcha is a jQuery plugin (in BETA) that allows users to complete captchas with a gesture, rather than typing on a tiny screen. Whether or not they’re on a smartphone, tablet, or a full desktop computer, this jQuery plugin would allow users to skip deciphering the squiggly, illegible text in captchas and simply and effortlessly trace a shape to confirm that they are humans and not computers when submitting forms. 
+								</p>
+								
+								<p class="description">
+									Read more about <a href="http://www.josscrowcroft.com/projects/motioncaptcha-jquery-plugin/">MotionCaptcha</a>.
+								</p>
+								
+								<p class="description">
+									Follow on <a href="https://github.com/josscrowcroft/MotionCAPTCHA">GitHub</a>.
+								</p>
+							</div>
+						</div>	
+							
+							
 							
 					</div>
 				</div>
