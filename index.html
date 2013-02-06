@@ -121,7 +121,7 @@
 								<h4>Web Fonts</h4>
 								<div class="imageContainer">
 									<div class="ribbon"> <img src="images/ribbon.png" alt="ribbon" width="45" height="45" /> </div>
-									<img class="tileImg" src="images/tiles/blank.png" alt="preview of the motion captcha" width="250" height="150"/>
+									<img class="tileImg" src="images/tiles/webfonts.jpg" alt="preview of the motion captcha" width="250" height="150"/>
 								</div>
 								<p>Google Web Fonts and Lost Type provide some of the best-designed free-to-use web fonts. </p>
 							</div>
@@ -373,6 +373,66 @@ background-repeat: repeat;  /* this repeats in all directions. you can also repe
 							</div>
 						</div>
 		
+						<div id="webFonts" class="page inner">
+							<h4>Web Fonts</h4>
+							
+							<img class="innerImg fontImg" src="images/pages/webfonts.jpg" alt="preview of web fonts" width="300" height="300"/>
+							
+							<div class="descriptionAndCode">
+						
+								<p class="description">
+									<a href="http://www.google.com/webfonts">Google Web Fonts</a> and <a href="http://www.losttype.com/">Lost Type</a> provide some of the best-designed free-to-use web fonts. Designers have really been making giant strides in the capabilities of web typography. 
+								</p>	
+								<p class="description">
+									Not too long ago, the only fonts you could use on your website were fonts common to both Windows and Mac — Arial, Comic Sans, Courier New, Georgia, Times New Roman, etc. For a while, you could purchase separate rights for a typeface you owned in order to embed it in your website. Now, there is a plethora of fonts that are already made for the web, ranging from well-designed to poorly-designed. But nevertheless, there are still quite a few beautiful typefaces that you can use on your site, for free, with attribution.  
+								</p>
+								<p class="description">
+									My two favorite resources for beautiful, free-to-use web fonts are <a href="http://www.google.com/webfonts">Google Web Fonts</a> and <a href="http://www.losttype.com/">Lost Type</a>. <a href="http://www.google.com/webfonts">Google Web Fonts</a> currently has 617 font families, many including a number of weights and styles. When embedding a font, you don’t need to host the font files yourself — Google does that for you, so you only need to link to them, making your site load faster.
+								</p>
+								<p class="description">
+									<a href="http://www.losttype.com/">Lost Type</a> is a little different than <a href="http://www.google.com/webfonts">Google Web Fonts</a> in that its main focus is curating beautiful typefaces under a pay-what-you-want model (it’s always nice to pay the designer). Some of the typefaces are already packaged for web use. If a font doesn’t yet have the @font-face package, you can generate it — just make sure you always credit the designer and include the full package from <a href="http://www.losttype.com/">Lost Type</a> (including all original font files and the license).
+								</p>
+								<p class="description">
+									If you ever want to embed your own typeface in your website, you first need to turn it into a @font-face. <a href="http://www.fontsquirrel.com/">Font Squirrel</a> has a <a href="http://www.fontsquirrel.com/fontface/generator">@font-face generator</a> that’s really easy to use. 
+								</p>
+								<ol>
+									<li>
+										Upload your font file. 
+									</li>
+									<li>
+										Select ‘Basic’, ‘Optimal’, or ‘Expert’ (I always use ‘Optimal’).
+									</li>
+									<li>
+										Agree to their terms (and don’t do anything illegal).
+									</li>
+									<li>
+										Download your @font-face kit. It will take a minute to generate.
+									</li>
+									<li>
+										Your @font-face kit will be folder containing different font files. Copy this entire folder into a ‘Fonts’ folder where your index.html file lives. 
+									</li>
+									<li>
+										A stylesheet.css file will be in the @font-face kit folder. You can link to this in your HTML, or — to save on style sheets and load time — copy and paste the contents into your main CSS file.
+									</li>
+								</ol>
+								<pre>
+@font-face {
+	font-family: 'myfontname';
+	src: url ('myfontname-webfont.eot');
+	src: url ('myfontname-webfont.eot?#iefix') format ('embedded-opentype'),
+		url ('myfontname-webfont.woff') format ('woff'),
+		url ('myfontname-webfont.ttf') format ('truetype'),
+		url ('myfontname-webfont.svg#myfontname') format ('svg');
+	font-weight: normal;
+	font-style: normal;
+}</pre>
+								<p class="description">
+									On this site, I have used Franchise, designed by <a href="www.derekweathersbee.com">Derek Weathersbee</a>, from <a href="http://www.losttype.com/font/?name=franchise">Lost Type</a>, as well as Roboto designed by <a href="http://betatype.com/">Christian Robertson</a>, from <a href="http://www.google.com/webfonts">Google Web Fonts</a>.
+								</p>
+								
+								
+							</div>
+						</div>
 							
 					</div>
 				</div>

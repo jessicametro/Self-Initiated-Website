@@ -21,6 +21,9 @@ $(document).ready(function() {
 	$("#tilePatterns").click(function() {
 		goToPage("#patterns");
 	});
+	$("#tileWebFonts").click(function() {
+		goToPage("#webFonts");
+	});
 	
 });
 
