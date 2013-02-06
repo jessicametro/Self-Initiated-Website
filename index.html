@@ -111,7 +111,7 @@
 							<div id="tilePatterns" class="tile">
 								<h4>Subtle Patterns</h4>
 								<div class="imageContainer">
-									<img class="tileImg" src="images/tiles/blank.png" alt="preview of the motion captcha" width="250" height="150"/>
+									<img class="tileImg" src="images/tiles/patterns.jpg" alt="preview of the motion captcha" width="250" height="150"/>
 								</div>
 								<p>Subtle Patterns is an online collection of beautifully designed patterns — all free to use. </p>
 							</div>
@@ -347,7 +347,30 @@ $(document).ready(function() {
 							</div>
 						</div>	
 							
+						<div id="patterns" class="page inner">
+							<h4>Subtle Patterns</h4>
+							<h5>curated by <a href="http://atlemo.com/">Atle Mo</a></h5>
 							
+							<img class="innerImg" src="images/pages/patterns.jpg" alt="preview of subtle patterns" width="300" height="300"/>
+							
+							<div class="descriptionAndCode">
+						
+								<p class="description">
+									Subtle Patterns is an online collection of beautifully designed patterns — all free to use. They work great as repeated background images on any div. If you feel the need to modify them (e.g. overlay a color, etc) you may do so in Photoshop, Gimp, or any other image editor. All the pattern creators ask is that you credit them somehow. 
+								</p>	
+								<p class="description">
+									The pattern I used on this site is Cream Dust, created by <a href="http://thomasmyrman.com/">Thomas Myrman</a>. I overlayed the teal color on it by opening it in Photoshop, changing its color mode from <em>Index</em> to <em>RGB Color</em>, creating a new layer, filling it with <span class="code">#1F8F9D</span>, setting the teal layer as the background, and changing the layer style of the pattern to <em>Linear Burn</em>. I then saved it <em>for Web & Devices</em> as a PNG-24.
+								</p>
+								<p class="description">
+									Repeating an image as a background is very simple CSS.
+								</p>
+								<pre>
+background-color: #1F8F9D;  /* always set a background color so the background is not blank if the image takes a while to load or fails to load altogether */
+background-image: url ('../images/patterns/cream_dust_edited.png');
+background-repeat: repeat;  /* this repeats in all directions. you can also repeat in one direction (repeat-x or repeat-y) or no-repeat */</pre>
+							</div>
+						</div>
+		
 							
 					</div>
 				</div>

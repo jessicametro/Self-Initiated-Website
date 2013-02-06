@@ -18,6 +18,10 @@ $(document).ready(function() {
 	$("#tileCaptcha").click(function() {
 		goToPage("#motionCaptcha");
 	});
+	$("#tilePatterns").click(function() {
+		goToPage("#patterns");
+	});
+	
 });
 
 $(window).load(function() {
