@@ -49,7 +49,7 @@ function fancyHistory() {
 	var statewatcher = function() {
 		var State = History.getState(); // Note: We are using History.getState() instead of event.state
 		History.log(State.data, State.title, State.url);
-		console.log("Hey state change wooo");
+		//console.log("Hey state change wooo");
 		if (State.data.page) {
 			dogoToPage(State.data.page, true);
 		} else {
@@ -87,11 +87,11 @@ function dogoToGallery() {
 }
 
 function goToPage(pagename) {
-	console.log("Pushing history for page "+pagename);
+	//console.log("Pushing history for page "+pagename);
 	History.pushState({page:pagename}, pagename, pagename.replace("#","/"));
 }
 
 function goToGallery() {
 	History.pushState({home:true}, "", "/");
-	console.log("Pushing history for home");
+	//console.log("Pushing history for home");
 }
