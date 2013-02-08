@@ -42,6 +42,7 @@ $(window).load(function() {
 
 
 
+var athome = true;
 
 function fancyHistory() {
 
@@ -50,9 +51,9 @@ function fancyHistory() {
 		History.log(State.data, State.title, State.url);
 		console.log("Hey state change wooo");
 		if (State.data.page) {
-			goToPage(state.data.page, true);
+			dogoToPage(State.data.page, true);
 		} else {
-			goToGallery(true);
+			dogoToGallery(true);
 		}
 	};
 
@@ -65,26 +66,32 @@ function fancyHistory() {
 	//statewatcher();
 }
 
-function goToPage(pagename, donthistory) {
+function dogoToPage(pagename) {
 	$(".tile").css({"margin-top":"-300px", "opacity":"0"});
 	$(".page").fadeOut(500);
 	$("#gallery").fadeOut(1000);
-	$(window).scrollTo("#galleryContainer");
+	$(window).scrollTo("#galleryContainer", 300);
 	$(pagename).fadeIn(1000, function() {
 		
 	});
-	if (!donthistory) {
-		console.log("Pushing history for page "+pagename);
-		History.pushState({page:pagename}, pagename, pagename.replace("#","/"));
-	}
+	athome = false;
 }
 
-function goToGallery(donthistory) {
+function dogoToGallery() {
+	if (athome) return;
+	$(window).scrollTo("#galleryContainer", 300);
 	$(".page").fadeOut(500);
 	$("#gallery").fadeIn(500);
 	$(".tile").css({"margin-top":"0px", "opacity":"1"});
-	if (!donthistory) {
-		History.pushState({home:true}, "", "");
-		console.log("Pushing history for home");
-	}
+	athome = true;
+}
+
+function goToPage(pagename) {
+	console.log("Pushing history for page "+pagename);
+	History.pushState({page:pagename}, pagename, pagename.replace("#","/"));
+}
+
+function goToGallery() {
+	History.pushState({home:true}, "", "/");
+	console.log("Pushing history for home");
 }
