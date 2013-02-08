@@ -88,10 +88,10 @@ function dogoToGallery() {
 
 function goToPage(pagename) {
 	//console.log("Pushing history for page "+pagename);
-	History.pushState({page:pagename}, pagename, pagename.replace("#","/"));
+	History.pushState({page:pagename}, "Self-Initiated", pagename.replace("#","/"));
 }
 
 function goToGallery() {
-	History.pushState({home:true}, "", "/");
+	History.pushState({home:true}, null, "/");
 	//console.log("Pushing history for home");
 }
