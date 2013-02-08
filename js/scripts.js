@@ -4,24 +4,27 @@ $(document).ready(function() {
 	$("#galleryHeader h2").fitText(0.44, { minFontSize: '42px', maxFontSize: '135px'});
 	$("#galleryHeader h3").fitText(0.83, { minFontSize: '13px', maxFontSize: '42px'});
 	
+	$('.flexslider').flexslider({
+	    /* animation: "slide", */
+	});
 	
 	
 	$("#galleryHeader").click(function() {
 		goToGallery();
 	});
-	$("#tileResponse").click(function() {
+	$("#tileResponse, #slideresponse").click(function() {
 		goToPage("#response");
 	});
-	$("#tileSpinner").click(function() {
+	$("#tileSpinner, #slidespinner").click(function() {
 		goToPage("#spinner");
 	});
-	$("#tileCaptcha").click(function() {
+	$("#tileCaptcha, #slidecaptcha").click(function() {
 		goToPage("#motionCaptcha");
 	});
-	$("#tilePatterns").click(function() {
+	$("#tilePatterns, #slidepatterns").click(function() {
 		goToPage("#patterns");
 	});
-	$("#tileWebFonts").click(function() {
+	$("#tileWebFonts, #slidewebfonts").click(function() {
 		goToPage("#webFonts");
 	});
 	
@@ -33,9 +36,6 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
-    $('.flexslider').flexslider({
-    	/* animation: "slide", */
-    });
 });
 
 
@@ -45,6 +45,7 @@ $(window).load(function() {
 
 function goToPage(pagename) {
 	$(".tile").css({"margin-top":"-300px", "opacity":"0"});
+	$(".page").fadeOut(500);
 	$("#gallery").fadeOut(1000);
 	$(pagename).fadeIn(1000, function() {
 		
