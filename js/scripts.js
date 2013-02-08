@@ -25,6 +25,11 @@ $(document).ready(function() {
 		goToPage("#webFonts");
 	});
 	
+	$(".about").click(function() {
+		$("#abouttext").fadeToggle();
+		$(".about").toggleClass("selected");
+	});
+	
 });
 
 $(window).load(function() {
