@@ -134,6 +134,16 @@ h1 {
 	text-align: center;
 }
 
+h1 .tagline {
+	font-family: 'franchiseregular', sans-serif;
+	color: #ffffff;
+	text-shadow: 4px 4px 0 rgba(0,0,0,0.20);
+	font-size: 90px;
+	line-height: 100%; /* 180px; */
+	/* text-transform:uppercase; */
+	text-align: center;
+}
+
 #slider {
 	position: relative;
 	margin: 0px auto 0px auto;
@@ -372,21 +382,26 @@ footer {
 	background-repeat:repeat;
 }
 
+#footerContainer {
+	max-width: 900px;
+}
+
 footer p {
 	/* height: 75px; */
 	font-family: 'roboto', sans-serif;
 	color: #ffffff;
-	font-size: 16px;
-	line-height: 22px;
+	font-size: 15px;
+	line-height: 20px;
 	font-weight: 300;
-	text-align: center;
-	padding: 30px;
+	text-align: left;
+	padding: 30px 30px 0 30px;
 }
 
 #footerLinks {
 	width: 360px;
 	height: 45px;
 	margin: 0 auto 0 auto;
+	padding-top: 30px;
 }
 
 a {
