@@ -94,7 +94,7 @@
 								<p>a jQuery plugin that enables text to scale proportionally with the width of...</p>
 							</div>
 							
-							<div id="tileFlexslider" class="tile used">
+							<div id="tileFlexSlider" class="tile used">
 								<h4>FlexSlider</h4>
 								<div class="imageContainer">
 									<div class="ribbon"> <img src="images/ribbon.png" alt="ribbon" width="45" height="45" /> </div>
@@ -112,8 +112,8 @@
 								<p>a CSS3 code sample to build responsive galleries based on CSS3... </i></p>
 							</div>
 						
-							<div id="tileAnimations" class="tile used">
-								<h4>CSS3 Animations</h4>
+							<div id="tileTransitions" class="tile used">
+								<h4>CSS3 Transitions</h4>
 								<div class="imageContainer">
 									<div class="ribbon"> <img src="images/ribbon.png" alt="ribbon" width="45" height="45" /> </div>
 									<img class="tileImg" src="images/tiles/blank.png" alt="preview of the responsive tiles" width="250" height="150"/>
@@ -165,7 +165,10 @@
 							<h5>created by <a href="http://paravelinc.com/">Paravel</a></h5>
 							<h6>last modified 02/08/13</h6>
 							
-							<img class="innerImg" src="images/pages/fittext.png" alt="preview of fittext" width="300" height="300"/>
+							<div class="demoBox">
+								<img class="innerImg" src="images/pages/fittext.png" alt="preview of fittext" width="300" height="300"/>
+								<a class="button demobutton" href="spinjsdemo.html">view live demo</a> <a class="button originalbutton" href="google.com">view original</a>
+							</div>
 							
 							<div class="descriptionAndCode">
 						
@@ -208,6 +211,132 @@ $("#fancyTitle").fitText(0.5125, { minFontSize: '60px', maxFontSize: '180px'});<
 							</div>
 						</div>
 						
+						<div id="flexSlider" class="page inner">
+							<h4>Flex Slider</h4>
+							<h5>created by <a href="http://www.tylerbuilds.co/">Tyler Smith</a>, <a href="http://www.woothemes.com/">WooThemes</a></h5>
+							<h6>last modified 02/08/13</h6>
+							
+							<div class="demoBox">
+								<img class="innerImg" src="images/pages/flexslider.jpg" alt="preview of flexslider" width="300" height="300"/>
+								<a class="button demobutton" href="spinjsdemo.html">view live demo</a> <a class="button originalbutton" href="google.com">view original</a>
+							</div>
+							
+							<div class="descriptionAndCode">
+						
+								<p class="description">
+									FlexSlider is a jQuery plugin for a responsive image slider that responds to touch. It is a really robust tool with a diversity of uses and a lot of customizability. For as complex as it can get, FlexSlider is actually rather easy to use:
+								</p>
+								
+								<ol>
+									<li>
+										Download the FlexSlider plugin.
+									</li>
+									<li>
+										Link to their StyleSheet and JavaScript files in the <span class="code"><head></span> of your HTML:
+									</li>
+									<pre class="codeList">
+&lt;link rel="stylesheet" href="js/flexslider/flexslider.css" type="text/css"/&gt;
+&lt;script src="js/flexslider/jquery.flexslider.js"&gt;&lt;/script&gt;</pre>
+									<li>
+										In your HTML, create a <span class="code">div class=”flexslider”</span> and <span class="code">ul class=”slides”</span>, where each <span class="code">li</span> is a different slide (image, text, etc). 
+									</li>
+									<pre class="codeList">
+&lt;div class="flexslider"&gt;
+	&lt;ul class="slides"&gt;
+		&lt;li&gt;
+			&lt;img src="images/flexslider/fittext.jpg"/&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;img src="images/flexslider/flexslider.jpg"/&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;img src="images/flexslider/spinner.jpg"/&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;img src="images/flexslider/webfonts.jpg"/&gt;
+		&lt;/li&gt;
+		&lt;!-- you get the point --&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+									<li>
+										Add the following code to your JavaScript file:
+									</li>
+									<pre class="codeList">
+$(window).load(function() {
+    $('.flexslider').flexslider();
+});</pre>
+								</ol>
+								
+								<p class="description">
+									If you are completely satisfied with how your slider looks at this point, then you’re done! But if you want, you can customize the animation as well as style it with CSS. WooThemes actually provides a lot of advanced options for customization, including usability features, primary controls, secondary navigation, etcetera.
+								</p>
+								
+								<p class="description">
+									I have used:
+								</p>
+								
+								<pre>
+$('.flexslider').flexslider({
+    animation: "slide",
+	touch: true,
+});</pre>
+								
+							</div>
+						</div>
+						
+						<div id="transitions" class="page inner">
+							<h4>CSS3 Transitions</h4>
+							<h6>last modified 02/08/13</h6>
+							
+							<div class="demoBox fontBox">
+								<img class="innerImg" src="images/pages/response.jpg" alt="preview of the responsive tiles" width="300" height="300"/>
+								<a class="button demobutton" href="spinjsdemo.html">view live demo</a> <a class="button originalbutton" href="google.com">view original</a>
+							</div>
+							
+							<div class="descriptionAndCode">
+						
+								<p class="description">
+									Webkit has some experimental features for the web including transitions. CSS3 Transitions are a way to animate CSS3 properties over time (as opposed to immediately). Some of these properties include: rotation, scale, position, color, and opacity.
+								</p>
+									
+								<p class="description">
+									I have implemented CSS3 Transitions in this site combined with some basic JavaScript. You’ll notice the transitions when you click/tap on a particular tool to view it in detail or return to the gallery of tools by clicking/tapping on the gallery header.
+								</p>
+								
+								<p class="description">
+									I started in JavaScript by moving the position of all the tiles up and simultaneously fading them out when one tile is clicked, so that the extended information for that tool can fade in. 
+								</p>
+								
+								<pre>
+function goToPage(pagename) {
+	$(".tile").css({"margin-top":"-300px", "opacity":"0"});
+	$("#gallery").fadeOut(1000);
+	$(pagename).fadeIn(1000, function() {	});
+}</pre>
+								<p class="description">
+									I then defined the transition in my CSS:
+								</p>
+								
+								<pre>
+-webkit-transition-property: opacity, margin-top;
+-webkit-transition-duration: 0.6s, 1s;
+transition-property: opacity, margin-top;
+transition-duration: 0.6s, 1s;</pre>
+								
+								<p class="description">
+									I also reversed the animation for when the title of the gallery is clicked/tapped in order to go back to the gallery of tools:
+								</p>
+								
+								<pre>
+function goToGallery() {
+	$(".page").fadeOut(500);
+	$("#gallery").fadeIn(500);
+	$(".tile").css({"margin-top":"0px", "opacity":"1"});
+}</pre>
+								
+							</div>
+						</div>
+						
 						<div id="response" class="page inner">
 							<h4>Response</h4>
 							<h5>created by <a href="http://jessicametro.com">Jessica Metro</a></h5>
@@ -221,7 +350,7 @@ $("#fancyTitle").fitText(0.5125, { minFontSize: '60px', maxFontSize: '180px'});<
 							<div class="descriptionAndCode">
 						
 								<p class="description">
-									Responsive Tiles is a CSS3 code sample I wrote to build responsive galleries based on CSS3 media queries. It functions by changing the number of columns displayed based on the user’s browser width or screen size.
+									Response is a CSS3 code sample I wrote to build responsive galleries based on CSS3 media queries. It functions by changing the number of columns displayed based on the user’s browser width or screen size.
 								</p>
 								
 								<p class="description">

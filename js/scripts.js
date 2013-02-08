@@ -17,8 +17,14 @@ $(document).ready(function() {
 	$("#tileFitText").click(function() {
 		goToPage("#fitText");
 	});
+	$("#tileFlexSlider").click(function() {
+		goToPage("#flexSlider");
+	});
 	$("#tileResponse").click(function() {
 		goToPage("#response");
+	});
+	$("#tileTransitions").click(function() {
+		goToPage("#transitions");
 	});
 	$("#tileSpinner, #slidespinner").click(function() {
 		goToPage("#spinner");

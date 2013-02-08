@@ -597,6 +597,10 @@ h6 {  /* "last modified on ... " */
 	padding-left: 8px;
 }
 
+.descriptionAndCode .codeList {
+	margin-top: 20px;
+}
+
 .descriptionAndCode ul {
 	list-style: circle;
 	margin-top: -20px;
