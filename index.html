@@ -160,6 +160,53 @@
 						
 						</div>
 						
+						<div id="fitText" class="page inner">
+							<h4>FitText</h4>
+							<h5>created by <a href="http://paravelinc.com/">Paravel</a></h5>
+							<h6>last modified 02/08/13</h6>
+							
+							<img class="innerImg" src="images/pages/fittext.png" alt="preview of fittext" width="300" height="300"/>
+							
+							<div class="descriptionAndCode">
+						
+								<p class="description">
+									FitText is a jQuery plugin that enables text to scale proportionally with the width of the browser — or rather, the width of the text’s parent element. It has a diversity of uses, though it is intended for use on headlines only (not paragraph text).
+								</p>
+								
+								<p class="description">
+									I have implemented FitText on this site via the title of the site, as well as the section headers. For a very basic use of it, I calculated the minimum and maximum sizes of each piece of text and determined a proper compressor (the rate at which it resizes).
+								</p>
+								
+								<p class="description">
+									I first set the type in Illustrator in it’s smallest size (for mobile devices) and it’s largest size (for desktop). I then measured the width of the full line of text in both sizes and divided each size by the width of the elements containing it in each size.
+								</p>
+								
+								<p class="description">
+									So, for my header, the min-width of the title is 60px and the min-width of the <span class="code">#headerContainer</span> is 280px, thus 21%. The max-width of the title is 180px and the max-width of the <span class="code">#headerContainer</span> is 900px, thus 20%. So, in my CSS, I have:
+								</p>
+								
+								<pre>
+#header h1 {
+	width: 20%;
+}</pre>
+								
+								<p class="description">
+									I also entered the min- and max- font sizes (so the plugin would not go below or above them) in my JavaScript:
+								</p>
+								
+								<pre>
+$("#fancyTitle").fitText(0.5125, { minFontSize: '60px', maxFontSize: '180px'});</pre>
+								
+								<p class="description">
+									For the compressor (“0.5125” in the above example), the higher the number, the more aggressive the text is resized (over 1.0); the lower the number, the less aggressive the text is resized (under 1.0). I used trial-and-error (resize the screen, make an adjustment, repeat) until I found a compressor that got as close to my min- and max- widths as possible. Each element of flexible type has a different compressor fine-tuned for the specific text.
+								</p>
+								
+								<p class="description">
+									Admittedly, it’s a little clunky; but it’s the best thing out there right now.
+								</p>
+								
+							</div>
+						</div>
 						
 						<div id="response" class="page inner">
 							<h4>Response</h4>

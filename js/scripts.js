@@ -14,7 +14,10 @@ $(document).ready(function() {
 	$("#galleryHeader").click(function() {
 		goToGallery();
 	});
-	$("#tileResponse, #slideresponse").click(function() {
+	$("#tileFitText").click(function() {
+		goToPage("#fitText");
+	});
+	$("#tileResponse").click(function() {
 		goToPage("#response");
 	});
 	$("#tileSpinner, #slidespinner").click(function() {
