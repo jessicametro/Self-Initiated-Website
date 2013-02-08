@@ -511,7 +511,7 @@ h6 {  /* "last modified on ... " */
 	display: block;
 }
 
-.button {
+.demoBox .button {
 	font-family: 'roboto', sans-serif;
 	float: left;
 	display: block;
@@ -524,9 +524,13 @@ h6 {  /* "last modified on ... " */
 	color: #fff;
 	font-size: 16px;
 	margin-top: 15px;
+	font-weight: 100;
 }
-.originalbutton {
-	margin-right: 0px;
+.demoBox .button:hover {
+        background-color: #219ead;
+}
+.demoBox .originalbutton {
+	margin-right: 0px !important;
 }
 
 .fontImg {
@@ -646,6 +650,14 @@ pre {
 		width: 240px;
 		height: 240px;
 	}
+	.demoBox .button {
+		width: 115px;
+		height: 38px;
+		line-height: 38px;
+		margin-right: 10px;
+		font-size: 13px;
+		margin-top: 10px;
+	}
 	.tile {
 		margin: 0 0 30px 20px;
 	}
@@ -690,6 +702,14 @@ pre {
 	.innerImg {
 		width: 300px;
 		height: 300px;
+	}
+	.demoBox .button {
+		width: 142px;
+		height: 45px;
+		line-height: 45px;
+		margin-right: 15px;
+		font-size: 16px;
+		margin-top: 15px;
 	}
 	#fancyTitleWrapper {
 		padding-left: 30px;
