@@ -445,8 +445,14 @@ a {
 
 /** Responsive Page **/
 
+/*
+.inner h4 {  // name of tool
+	display: inline;
+	padding-right: 4px;
+}
+*/
 
-h5 {
+h5 {  /* "created by ... " */
 	font-family: 'roboto', sans-serif;
 	font-family: 'roboto', sans-serif;
 	color: #000000;
@@ -454,16 +460,29 @@ h5 {
 	line-height: 20px;
 	font-weight: 300;
 	padding-bottom: 20px;
+	margin-top: -5px;
+
+}
+
+h6 {  /* "last modified on ... " */
+	font-family: 'roboto', sans-serif;
+	font-family: 'roboto', sans-serif;
+	color: #aaaaaa;
+	font-size: 11px;
+	line-height: 20px;
+	font-weight: 300;
+	padding-bottom: 20px;
+	margin-top: -10px;
 }
 
 .innerImg {
 	position: relative;
 	float: right;
-	margin: -80px 0 20px 20px; /* no margin-right because of .inner */
+	margin: -105px 0 20px 20px; /* no margin-right because of .inner */
 }
 
 .fontImg {
-	margin-top: -40px;
+	margin-top: -65px;
 }
 
 .innerImg img {
@@ -492,7 +511,7 @@ h5 {
 	border-radius: 2px;
 }
 
-.descriptionAndCode p {
+.descriptionAndCode p, .inner p {
 	font-family: 'roboto', sans-serif;
 	color: #222222;
 	font-size: 15px;
@@ -607,12 +626,12 @@ pre {
 	.innerImg {
 		position: relative;
 		float: right;
-		margin: -80px 0 20px 20px; /* no margin-right because of .inner */
+		margin: -105px 0 20px 20px; /* no margin-right because of .inner */
 		width: 300px;
 		height: 300px;
 	}
 	.fontImg {
-		margin-top: -40px;
+		margin-top: -65px;
 	}
 	.tile {
 		margin: 0 0 30px 30px;
