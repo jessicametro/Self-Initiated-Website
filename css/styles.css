@@ -251,6 +251,13 @@ h1 .tagline {
 	width: 62%;
 }
 
+#galleryHeader:hover h2 {
+        color: #219ead;
+}
+#galleryHeader:hover {
+	cursor: pointer;
+}
+
 #galleryHeader h3 {
 	float: left;
 	font-family: 'roboto', sans-serif;
@@ -296,6 +303,14 @@ h1 .tagline {
     -webkit-transition-duration: 0.6s, 1s;
 	transition-property: opacity, margin-top;
     transition-duration: 0.6s, 1s;
+}
+
+.tile:hover {
+	cursor: pointer;
+	background-color: #f9f9f9;
+	-moz-box-shadow: 0 3px 4px 0 rgba(33, 158, 173,0.25);
+	-webkit-box-shadow: 0 3px 4px 0 rgba(33, 158, 173, 0.25);
+	box-shadow: 0 3px 4px 0 rgba(33, 158, 173,0.25);
 }
 
 /*
