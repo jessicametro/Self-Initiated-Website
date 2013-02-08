@@ -507,10 +507,14 @@ h6 {  /* "last modified on ... " */
 	float: right;
 	margin: -105px 0 20px 20px; /* no margin-right because of .inner */
 }
+.innerImg {
+	display: block;
+}
 
 .button {
 	font-family: 'roboto', sans-serif;
 	float: left;
+	display: block;
 	width: 142px;
 	height: 45px;
 	text-align: center;
@@ -519,7 +523,7 @@ h6 {  /* "last modified on ... " */
 	background-color: #1B808C;
 	color: #fff;
 	font-size: 16px;
-	margin-top: 13px;
+	margin-top: 15px;
 }
 .originalbutton {
 	margin-right: 0px;
