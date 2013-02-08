@@ -401,6 +401,10 @@ img.tileImg {
 	margin-bottom: 15px;
 }
 
+.resources a:hover {
+	text-decoration: underline;
+}
+
 em {
 	font-style: italic;
 }
